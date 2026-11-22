@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Student Information System</h1>
+    <p>Welcome to Your Student Dashboard</p>
+</header>
+
+<nav>
+    <a href="#profile">Profile</a>
+    <a href="#attendance">Attendance</a>
+    <a href="#courses">Courses</a>
+    <a href="#exams">Examinations</a>
+    <a href="#academic">Academic Records</a>
+</nav>
+
+<main>
+
+<!-- STUDENT PROFILE -->
+<section id="profile">
+    <h2>Student Profile</h2>
+
+    <div class="student-info">
+        <img src="https://placehold.co/100x100?text=Student"
+             alt="Student profile">
+
+        <div>
+            <p><b>Name:</b> Ananya Kumar</p>
+            <p><b>Register Number:</b> 24CS101</p>
+            <p><b>Department:</b> Computer Science</p>
+            <p><b>Year:</b> First Year</p>
+            <p><b>Email:</b> ananya@gmail.com</p>
+        </div>
+    </div>
+
+    <button id="profileBtn">Show / Hide Profile</button>
+</section>
+
+<!-- ATTENDANCE -->
+<section id="attendance">
+    <h2>Attendance Details</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>85%</h3>
+            <p>Overall Attendance</p>
+        </div>
+
+        <div class="card">
+            <h3>90%</h3>
+            <p>Present</p>
+        </div>
+
+        <div class="card">
+            <h3>10%</h3>
+            <p>Absent</p>
+        </div>
+    </div>
+
+    <div class="progress-container">
+        <span>Attendance Progress</span>
+        <div class="progress-bg">
+            <div id="progressBar"></div>
+        </div>
+    </div>
+
+    <button id="attendanceBtn">View Attendance Progress</button>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+    <h2>Enrolled Courses</h2>
+
+    <div class="cards">
+        <div class="card course">Web Technology</div>
+        <div class="card course">C Programming</div>
+        <div class="card course">Digital System Design</div>
+        <div class="card course">Mathematics</div>
+    </div>
+</section>
+
+<!-- EXAMINATION -->
+<section id="exams">
+    <h2>Examination Information</h2>
+
+    <p>Internal Assessment: Completed</p>
+    <p>Semester Examination: Upcoming</p>
+    <p>Exam Status: Eligible</p>
+
+    <button id="examBtn">Check Exam Notification</button>
+
+    <div id="notification">
+        <span>!</span>
+        Your semester examination is upcoming.
+        Please check your examination schedule.
+    </div>
+</section>
+
+<!-- ACADEMIC RECORDS -->
+<section id="academic">
+    <h2>Academic Performance</h2>
+
+    <button id="marksBtn">Show / Hide Marks</button>
+
+    <div class="table-container" id="marksTable">
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+
+            <tr>
+                <td>Web Technology</td>
+                <td>90</td>
+                <td>A+</td>
+            </tr>
+
+            <tr>
+                <td>C Programming</td>
+                <td>85</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Mathematics</td>
+                <td>88</td>
+                <td>A</td>
+            </tr>
+
+            <tr>
+                <td>Digital Design</td>
+                <td>92</td>
+                <td>A+</td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Student Information System | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
